@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+  <title id="title">Generos de filmes</title>
+  <desc id="desc">Mascara de cinema e claquete para representar generos.</desc>
+  <defs>
+    <linearGradient id="bg" x1="18" y1="16" x2="142" y2="144" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2f6fe4"/>
+      <stop offset=".55" stop-color="#202844"/>
+      <stop offset="1" stop-color="#17140d"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="42" y1="34" x2="124" y2="130" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff2b6"/>
+      <stop offset=".45" stop-color="#f5c518"/>
+      <stop offset="1" stop-color="#a56a17"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#000" flood-opacity=".45"/>
+    </filter>
+  </defs>
+  <rect width="160" height="160" rx="28" fill="url(#bg)"/>
+  <circle cx="120" cy="36" r="48" fill="#ffffff" opacity=".06"/>
+  <circle cx="39" cy="124" r="56" fill="#f5c518" opacity=".08"/>
+  <g filter="url(#shadow)">
+    <rect x="42" y="36" width="78" height="42" rx="7" fill="#191714" stroke="#f5c518" stroke-width="4"/>
+    <path d="M44 45h74M55 37l12 16M76 37l12 16M97 37l12 16" stroke="#f4e9d2" stroke-width="6" stroke-linecap="round"/>
+    <rect x="48" y="57" width="66" height="12" rx="3" fill="#f5c518" opacity=".85"/>
+    <path d="M39 92c0-18 16-30 41-30s41 12 41 30c0 21-13 37-41 37S39 113 39 92z" fill="url(#gold)" stroke="#fff3bd" stroke-width="4"/>
+    <path d="M59 92c8-7 17-7 25 0M89 92c8-7 17-7 25 0" fill="none" stroke="#17140d" stroke-width="5" stroke-linecap="round"/>
+    <path d="M69 111c8 7 18 7 26 0" fill="none" stroke="#17140d" stroke-width="5" stroke-linecap="round"/>
+  </g>
+</svg>

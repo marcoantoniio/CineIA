@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+  <title id="title">Diretores de filmes</title>
+  <desc id="desc">Cadeira de diretor e megafone para representar direcao.</desc>
+  <defs>
+    <linearGradient id="bg" x1="18" y1="18" x2="140" y2="146" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#b23a34"/>
+      <stop offset=".5" stop-color="#3b1f1c"/>
+      <stop offset="1" stop-color="#17140d"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="42" y1="28" x2="124" y2="132" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fff2b6"/>
+      <stop offset=".45" stop-color="#f5c518"/>
+      <stop offset="1" stop-color="#a56a17"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#000" flood-opacity=".45"/>
+    </filter>
+  </defs>
+  <rect width="160" height="160" rx="28" fill="url(#bg)"/>
+  <path d="M18 113c37-18 83-18 124 2" fill="none" stroke="#f5c518" stroke-width="2" opacity=".18"/>
+  <circle cx="122" cy="39" r="44" fill="#ffffff" opacity=".06"/>
+  <g filter="url(#shadow)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M51 56h55v43H51z" fill="#201711" stroke="#f4e9d2" stroke-width="5"/>
+    <path d="M56 62h45v15H56z" fill="url(#gold)" stroke="#f5c518" stroke-width="3"/>
+    <path d="M53 100l-13 31M104 100l15 31M62 100l19 31M95 100l-18 31" stroke="#f4e9d2" stroke-width="6"/>
+    <path d="M92 47l29-12v38L92 61z" fill="url(#gold)" stroke="#fff2b6" stroke-width="4"/>
+    <path d="M67 43h26v25H67z" fill="#191714" stroke="#f4e9d2" stroke-width="4"/>
+    <path d="M125 45c7 6 7 16 0 22" fill="none" stroke="#f5c518" stroke-width="5"/>
+  </g>
+</svg>

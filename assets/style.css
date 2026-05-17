@@ -1,0 +1,221 @@
+:root {
+  --bg: #17140d;
+  --panel: rgba(33, 29, 19, .86);
+  --panel-soft: rgba(255, 255, 255, .035);
+  --border: rgba(245, 197, 24, .16);
+  --text: #f4ead4;
+  --muted: #aeb5bf;
+  --primary: #f5c518;
+}
+
+.stApp {
+  background:
+    radial-gradient(circle at 50% 44%, rgba(245, 197, 24, .12), transparent 34%),
+    linear-gradient(180deg, #17140d 0%, #110e09 100%);
+  color: var(--text);
+}
+
+html,
+body,
+[data-testid="stAppViewContainer"],
+[data-testid="stBottomBlockContainer"],
+[data-testid="stChatInput"],
+[data-testid="stChatInput"] > div {
+  background: transparent !important;
+}
+
+header[data-testid="stHeader"] {
+  background: transparent;
+  height: 0;
+}
+
+[data-testid="stToolbar"],
+[data-testid="stDecoration"],
+#MainMenu,
+footer {
+  display: none !important;
+}
+
+.block-container {
+  max-width: 1680px;
+  padding-bottom: 2rem;
+  padding-top: 2.2rem;
+  width: 97vw;
+}
+
+.dict-anchor {
+  display: block;
+  height: 1px;
+  scroll-margin-top: 3.25rem;
+}
+
+.node-card,
+.node-card:visited,
+.node-card:hover {
+  color: #f4ead4 !important;
+}
+
+.node-card strong {
+  color: #f4ead4 !important;
+}
+
+.node-card span {
+  color: #aeb5bf !important;
+}
+
+[data-testid="stBottomBlockContainer"] {
+  background: rgba(17, 14, 9, .95) !important;
+  border-top: 1px solid var(--border);
+  box-shadow: 0 -18px 36px rgba(0, 0, 0, .22);
+  padding: .65rem 5rem .8rem !important;
+}
+
+[data-testid="stChatInput"] textarea {
+  background: rgba(0, 0, 0, .34) !important;
+  border: 1px solid rgba(245, 197, 24, .22) !important;
+  border-radius: 999px !important;
+  color: var(--text) !important;
+}
+
+[data-testid="stChatInput"] textarea::placeholder {
+  color: rgba(244, 234, 212, .55) !important;
+}
+
+.topbar-line {
+  border-bottom: 1px solid rgba(245, 197, 24, .14);
+  margin: .55rem 0 1.2rem;
+}
+
+.brand {
+  align-items: center;
+  display: flex;
+  gap: .85rem;
+}
+
+.header-brand {
+  min-height: 2.9rem;
+}
+
+.floating-reset {
+  align-items: center;
+  background: linear-gradient(145deg, rgba(255, 255, 255, .06), rgba(255, 255, 255, .025));
+  border: 1px solid rgba(245, 197, 24, .18);
+  border-radius: 999px;
+  bottom: 5rem;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, .26), inset 0 1px 0 rgba(255, 255, 255, .04);
+  color: #f4ead4 !important;
+  display: inline-flex;
+  font-size: .82rem;
+  font-weight: 700;
+  height: 2.35rem;
+  justify-content: center;
+  padding: 0 .95rem;
+  position: fixed;
+  right: 5rem;
+  text-decoration: none !important;
+  white-space: nowrap;
+  z-index: 9999;
+}
+
+.floating-reset:hover {
+  background: rgba(245, 197, 24, .09);
+  border-color: rgba(245, 197, 24, .42);
+  color: #f5c518 !important;
+}
+
+.brand img {
+  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, .35));
+  height: 40px;
+  object-fit: contain;
+  width: 104px;
+}
+
+.brand-title {
+  color: #f4ead4;
+  font-size: 1.35rem;
+  font-weight: 800;
+}
+
+.brand-title span {
+  color: var(--primary);
+}
+
+.theme-title {
+  color: #f4ead4;
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin: .6rem 0 .2rem;
+}
+
+.section-label {
+  color: var(--muted);
+  font-size: .75rem;
+  font-weight: 800;
+  letter-spacing: .1em;
+  margin-top: 1rem;
+  text-transform: uppercase;
+}
+
+.dict-grid {
+  display: grid;
+  gap: .7rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin: .7rem 0 1rem;
+}
+
+.dict-item {
+  background: linear-gradient(145deg, rgba(255, 255, 255, .055), rgba(255, 255, 255, .02));
+  border: 1px solid rgba(245, 197, 24, .12);
+  border-radius: 18px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .04);
+  padding: .85rem .95rem;
+}
+
+.dict-item strong {
+  color: #f4ead4;
+  display: block;
+  font-size: .88rem;
+}
+
+.dict-item code {
+  background: rgba(245, 197, 24, .1);
+  border-radius: 999px;
+  color: var(--primary);
+  display: inline-block;
+  font-size: .72rem;
+  margin: .35rem 0;
+  padding: .12rem .3rem;
+}
+
+.dict-item span,
+.dict-item p {
+  color: var(--muted);
+  font-size: .78rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.stButton > button,
+[data-testid="stButton"] button {
+  background: linear-gradient(145deg, rgba(255, 255, 255, .055), rgba(255, 255, 255, .02));
+  border: 1px solid rgba(245, 197, 24, .12);
+  border-radius: 999px;
+  color: var(--text) !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .035);
+  min-height: 2.45rem;
+  text-align: center;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.stButton > button:hover,
+[data-testid="stButton"] button:hover {
+  background: rgba(245, 197, 24, .08) !important;
+  border-color: rgba(245, 197, 24, .45) !important;
+  color: var(--primary) !important;
+}
+
+.soft-separator {
+  border-top: 1px solid rgba(245, 197, 24, .08);
+  margin: .8rem 0 .9rem;
+}
